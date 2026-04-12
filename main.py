@@ -13,7 +13,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 MY_USER = os.getenv("MY_USER")
 MY_PASS = os.getenv("MY_PASS")
 
-TARGET_URL = "http://185.2.83.39/ints/client/SMSTestPanel"
+TARGET_URL = "http://185.2.83.39/ints/client/SMSCDRStats"
 LOGIN_URL = "http://185.2.83.39/ints/login"
 
 # ✅ Firebase URL (FROM FIRST SCRIPT)
