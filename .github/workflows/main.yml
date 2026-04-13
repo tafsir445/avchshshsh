@@ -9,9 +9,6 @@ concurrency:
   group: ts-sms-bot
   cancel-in-progress: true
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
-
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -20,6 +17,11 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+      with:
+        ref: main   # 🔥 important
+
+    - name: Debug Files
+      run: ls -la   # 🔍 check file exists
 
     - name: Set up Python
       uses: actions/setup-python@v5
